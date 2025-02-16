@@ -1,13 +1,19 @@
+// identifier should be in the form: foldername.messageid.
+
 export default {
-  loading: 'Nahrávám',
+  loading: 'Načítám',
   error: 'Chyba',
   close_panel: 'Zavřít panel',
-  webgl_error: `Jejda. Tato mapa potřebuje technologii WebGL.<br /><br />Pokud máte moderní zařízení, zkuste nainstalovat poslední verzi prohlížeče Chrome.`,
+  webgl_error: `Jejda. Tato mapa potřebuje technologii WebGL.<br /><br />
+     Pokud máte moderní zařízení, zkuste nainstalovat poslední verzi prohlížeče Chrome nebo povolte WebGL:
+     <ul><li><a href="https://support.mozilla.org/kb/upgrade-graphics-drivers-use-hardware-acceleration">Firefox, Librewolf</a>
+     <li><a href="https://www.geeksforgeeks.org/how-to-enable-webgl-on-chrome/">Chrome, Chromium, Brave, Edge</a></ul>`,
   darkmode_auto: 'Tmavý režim: auto',
   darkmode_on: 'Tmavý režim: zap.',
   darkmode_off: 'Tmavý režim: vyp.',
   show_more: 'Zobrazit více',
   show_less: 'Zobrazit méně',
+  url_not_found_toast: 'Požadovaná adresa URL nenalezena, zkontrolujte adresní řádek.',
 
   'user.login_register': 'Přihlásit se / Registrovat',
   'user.logout': 'Odhlásit se',
@@ -26,6 +32,27 @@ export default {
   'user_settings.crag_view_layout_vertical': 'Vedle sebe',
   'user_settings.crag_view_layout_horizontal': 'Pod sebou',
   'user_settings.crag_view_layout_auto': 'Automaticky (podle rozlišení)',
+  'user_settings.is_imperial': 'Použít imperiální jednotky',
+
+  'my_ticks.title': 'Moje přelezy',
+  'my_ticks.route_name': 'Název',
+  'my_ticks.route_grade': 'Obtížnost',
+  'my_ticks.route_style': 'Styl',
+  'my_ticks.route_date': 'Datum',
+  'my_ticks.no_ticks_paragraph1': 'Zatím nemáte žádné přelezy…',
+  'my_ticks.no_ticks_paragraph2': 'Zapsat si je můžete na detailu sektoru',
+
+  'tick.style_description_not_selected': 'Není zvolen styl lezení.',
+  'tick.style_description_OS': 'Přelezení cesty na první pokus bez předchozích informací nebo nácviku.',
+  'tick.style_description_FL': 'Přelezení cesty na první pokus s předchozími informacemi nebo betou.',
+  'tick.style_description_RP': 'Úspěšné přelezení cesty po předchozím nacvičení.',
+  'tick.style_description_PP': 'Úspěšné přelezení cesty s předem založeným jištěním po předchozím nacvičení.',
+  'tick.style_description_RK': 'Přelezení cesty kombinací volného lezení a technického lezení.',
+  'tick.style_description_AF': 'Úplně volné přelezení cesty bez použití technických pomůcek k postupu.',
+  'tick.style_description_TR': 'Lezení s horním jištěním, kdy je lano již ukotveno nahoře.',
+  'tick.style_description_FS': 'Lezení bez jakéhokoliv jištění nebo lana.',
+
+  'climbing_renderer.climbing_grade': 'lezecká obtížnost ',
 
   'project.osmapp.description': 'Univerzální appka pro OpenStreetMap',
   'project.osmapp.serpDescription': 'Otevřená mapa světa nad OpenStreetMap databází. Hledání, klikatelné POIs, editace a více!',
@@ -54,6 +81,7 @@ export default {
   'homepage.go_to_map_button': 'Přejít na mapu',
   'homepage.examples.eg': 'např.',
   'homepage.examples.charles_bridge_statues': 'Sochy na Karlově mostě',
+  'homepage.screenshot_alt': 'Screenshot OsmAPP',
   'homepage.about_osm': `Mapová data pochází z projektu <a href="https://osm.org">OpenStreetMap</a>, tvoří ho
     miliony dobrovolníků — podobně jako Wikipedii.
     Každý rozkliknutý prvek zde můžete <em>Upravit</em>.`,
@@ -101,8 +129,10 @@ export default {
   'searchbox.overpass_success': 'Nalezeno výsledků: __count__',
   'searchbox.overpass_error': 'Chyba při načítání výsledků. __message__',
   'searchbox.overpass_custom_query': 'vlastní dotaz',
+  'searchbox.coordinate_subtitle': 'Zeměpisná šířka, délka',
 
   'directions.get_directions': 'Vyhledat trasu',
+  'directions.add_destination': 'Přidat cíl',
   'directions.form.start_or_click': 'Zvolte začátek nebo klikněte do mapy',
   'directions.form.destination': 'Cíl',
   'directions.edit_destinations': 'Upravit zadání',
@@ -135,18 +165,24 @@ export default {
   'featurepanel.feature_description_point': 'Mapové souřadnice',
   'featurepanel.show_tags': 'Zobrazit tagy',
   'featurepanel.show_objects_around': 'Zobrazit objekty v okolí',
+  'featurepanel.more_in_openplaceguide': 'Více informací na __instanceName__',
   'featurepanel.uncertain_image': 'Je zobrazena nejbližší fotka uliční úrovně. Může ukazovat jiný objekt.',
   'featurepanel.inline_edit_title': 'Upravit',
   'featurepanel.objects_around': 'Objekty v okolí',
   'featurepanel.climbing_restriction': 'Lezecké omezení',
+  'featurepanel.login': 'Přihlásit se',
   'featurepanel.footer_title': 'Ostatní informace',
   'featurepanel.climbing_sectors': 'Lezecké sektory',
   'featurepanel.climbing_sectors_in': 'v oblasti',
   'featurepanel.routes': 'cest',
 
+  'opening_hours.all_day': 'nonstop',
   'opening_hours.open': 'Otevřeno: __todayTime__',
   'opening_hours.now_closed_but_today': 'Nyní zavřeno, dnes: __todayTime__',
   'opening_hours.today_closed': 'Dnes zavřeno',
+  'opening_hours.opens_soon': 'Brzy otvírá',
+  'opening_hours.opens_soon_today': 'Brzy otvírá: __todayTime__',
+  'opening_hours.closes_soon': 'Brzy zavírá',
   'opening_hours.days_su_mo_tu_we_th_fr_sa': 'neděle|pondělí|úterý|středa|čtvrtek|pátek|sobota',
   'opening_hours.editor.closed': 'zavřeno',
   'opening_hours.editor.create_advanced': 'Podrobnější otvírací dobu můžete vytvořit v <link>nástroji YoHours</link>.',
@@ -201,6 +237,7 @@ export default {
   'editdialog.location_longitude': 'Zeměpisná délka',
   'editdialog.tags_editor_info': `Tagy popisují vlastnosti mapového prvku v dohodnutém formátu. Zde naleznete úplný
         <a href="https://wiki.openstreetmap.org/wiki/Cs:Map_Features" target="_blank">přehled všech tagů v OpenStreetMap</a>.`,
+  'editdialog.login_in_progress': `Přihlašování...`,
   'editdialog.save_refused': 'Změny se nepodařilo uložit.',
   'editdialog.parents': 'Nadřazené relace',
   'editdialog.climbing_areas': 'Lezecké oblasti',

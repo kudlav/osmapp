@@ -1,15 +1,12 @@
 // identifier should be in the form: foldername.messageid.
 
-import { t } from '../services/intl';
-import React from 'react';
-
 export default {
   loading: '読み込み中',
   error: 'エラー',
   close_panel: 'パネルを閉じる',
   webgl_error: `おっと。この地図には WebGL テクノロジーが必要です。<br /><br />
 互換性のあるデバイスをお持ちの場合は、ブラウザの最新バージョンを使用してみるか、WebGL を有効にしてください。
-<ul><li>in <a href="https://otechworld.com/webgl-in-firefox/">Firefox, Librewolf</a>
+<ul><li>in <a href="https://support.mozilla.org/kb/upgrade-graphics-drivers-use-hardware-acceleration">Firefox, Librewolf</a>
 <li>in <a href="https://www.geeksforgeeks.org/how-to-enable-webgl-on-chrome/">Chrome, Chromium, Brave, Edge</a></ul>`,
   darkmode_auto: 'ダークモード：自動',
   darkmode_on: 'ダークモード：オン',

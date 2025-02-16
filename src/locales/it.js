@@ -6,7 +6,7 @@ export default {
   close_panel: 'Chiudi pannello',
   webgl_error: `Oops. Questa mappa richiede l’uso di WebGL.<br /><br />
      Se possiedi un dispositivo compatibile, prova a usare l’ultima versione del tuo browser o abilita WebGL:
-     <ul><li>in <a href="https://otechworld.com/webgl-in-firefox/">Firefox, Librewolf</a>
+     <ul><li>in <a href="https://support.mozilla.org/kb/upgrade-graphics-drivers-use-hardware-acceleration">Firefox, Librewolf</a>
      <li>in <a href="https://www.geeksforgeeks.org/how-to-enable-webgl-on-chrome/">Chrome, Chromium, Brave, Edge</a></ul>`,
   darkmode_auto: 'Modalità scura: auto',
   darkmode_on: 'Modalità scura: attiva',

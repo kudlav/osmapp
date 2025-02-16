@@ -6,7 +6,7 @@ export default {
   close_panel: 'Fermer cet onglet',
   webgl_error: `Oups, cette carte requiert l’utilisation de WebGL.<br /><br />
     Si votre appareil est compatible, essayez d’utiliser la dernière version de votre navigateur ou activez simplement WebGL :
-    <ul><li>dans <a href="https://otechworld.com/webgl-in-firefox/">Firefox, Librewolf</a>
+    <ul><li>dans <a href="https://support.mozilla.org/kb/upgrade-graphics-drivers-use-hardware-acceleration">Firefox, Librewolf</a>
     <li>dans <a href="https://www.geeksforgeeks.org/how-to-enable-webgl-on-chrome/">Chrome, Chromium, Brave, Edge</a></ul>`,
   darkmode_auto: 'Mode sombre : auto',
   darkmode_on: 'Mode sombre : activé',
